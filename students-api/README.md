@@ -8,16 +8,12 @@ RESTful API za upravljanje studentima i ispitima
 - Upravljanje ispitima (kreiranje, prikaz, izmena, brisanje)
 - Obrada grešaka
 
----
-
 ## Tehnologije
 
 - **Node.js** + **Express**
 - **MongoDB** + **Mongoose**
 - **ES6 Modules**
 - **REST arhitektura**
-
----
 
 ## API Rute
 
@@ -29,7 +25,7 @@ RESTful API za upravljanje studentima i ispitima
 | GET    | `/api/students/:id`                | Dohvatanje studenta po ID-u |
 | GET    | `/api/students/index/:indexNumber` | Dohvatanje po broju indeksa |
 | POST   | `/api/students`                    | Kreiranje novog studenta    |
-| PUT    | `/api/students/:id`                | Potpuna izmena studenta     |
+| PUT    | `/api/students/:id`                | Izmena studenta             |
 | DELETE | `/api/students/:id`                | Brisanje studenta           |
 
 ### Ispiti
@@ -39,17 +35,12 @@ RESTful API za upravljanje studentima i ispitima
 | GET    | `/api/exams`     | Dohvatanje svih ispita       |
 | GET    | `/api/exams/:id` | Dohvatanje ispita po ID-u    |
 | POST   | `/api/exams`     | Kreiranje ispita za studenta |
-| PUT    | `/api/exams/:id` | Potpuna izmena ispita        |
+| PUT    | `/api/exams/:id` | Izmena ispita                |
 | DELETE | `/api/exams/:id` | Brisanje ispita              |
 
----
 
 ## Napomena
 
 - `POST` zahtevi očekuju `Content-Type: application/json`
 - Broj indeksa treba enkodovati u URL (npr. `2022/1234` → `2022%2F1234`)
 - API spreman za lokalno testiranje putem Postman-a ili sličnog alata
-
-```
-
-```
